@@ -16,7 +16,7 @@ function enviarMsg(mensagem){
 let envia = require('axios');
 envia.post('http://150.165.85.16:9900/api/msgs',{
   title: 'Mural',
-  msg: 'Primeiro envio',
+  msg: 'Terceiro envio',
   author:'Pedro',
   credentials:'pwanderley:28101997'
 }) 
