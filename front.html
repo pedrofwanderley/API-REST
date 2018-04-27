@@ -7,22 +7,25 @@
 </head>
 <body>
     
-    <section class="cabecalho"
-        <h1 class="cabecalho">Mural de Mensagens</h1>
+    <section class="section1">
+        <h1 class="cabecalho">Sistema de Mensagens</h1>
     </section>
-    <main>
-        <article class="Entrada">
-            <h2 class="texto">Caixa de Entrada de Mensagens</h2>
-            <h2>Titutlo</h2>
-            <input type="text" id="titulo" >
-             <h2>msg</h2>
-            <input type="text" id="msg" >
-             <h2>Author</h2>
-            <input type="text" id="author" >
+    <main id="main">
+        <article>
+            <h2 id="texto">Entradas de Mensagens</h2>
+            <h2 id="msg_titulo">Título</h2>
+            <textarea id="titulo" ></textarea>
+           <!-- <input id="caixa_texto" type="text" id="titulo" >-->
+             <h2 id="msg_titulo">Mensagem</h2>
+             <textarea id="msg" ></textarea>
+            <!--<input id="caixa_texto" type="text" id="msg" >-->
+             <h2 id="msg_titulo">Autor</h2>
+             <textarea id="author" ></textarea>
+            <!--<input id="caixa_texto" type="text" id="author" >-->
         </article>
 
         <article>
-            <button onclick="escrever()">Enviar</button>
+            <button id="button" onclick="escrever()">Enviar</button>
         </article>
         <p id="EntradaDeTexto"></p>
     </main>
