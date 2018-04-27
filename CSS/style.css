@@ -16,32 +16,48 @@
     padding-bottom: 20px;
 }
 #main{
-    text-align: center;
+  
     background-color: black;
 }
 #titulo{
     border-color: brown;
+    margin-left: 10px;
     width: 300px;
     height: 100px;
+    border-radius: 10px;
+    border-width: thick;
 }
 
 #msg{
     border-color: brown;
+    margin-left: 10px;
     width: 300px;
     height: 100px;
+    border-radius: 10px;
+    border-width: thick;
 }
 
 #author{
     border-color: brown;
+   margin-left: 10px;
     width: 300px;
     height: 100px;
+    border-radius: 10px;
+    border-width: thick;
 }
 #msg_titulo{
     color: brown;
+    margin-left: 30px;
+}
+#aqui{
+    text-align: center;
 }
 #button{
     color: brown;
     border-color: brown;
+    border-width: medium;
+    border-style:solid;
+    border-radius: 10px;
     font-weight: bold;
     margin: 70px;
     width: 90px;
