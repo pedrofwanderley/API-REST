@@ -6,17 +6,15 @@ function escrever(){
   obj.title = titulo;
   obj.msg = msg;
   obj.author = author;
-  obj.id = "pwanderley";
+  obj.id = "pwanderley:28101997";
   enviarMsg(obj);
 }
 function enviarMsg(mensagem){
-  
+  axios.post('http://150.165.85.16:9900/api/msgs',{
+  title: mensagem.title,
+  msg: mensagem.msg,
+  author:mensagem.author,
+  credentials:mensagem.id
+}) 
 
 }
-let envia = require('axios');
-envia.post('http://150.165.85.16:9900/api/msgs',{
-  title: 'Mural',
-  msg: 'Terceiro envio',
-  author:'Pedro',
-  credentials:'pwanderley:28101997'
-}) 
