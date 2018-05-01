@@ -18,3 +18,14 @@ function enviarMsg(mensagem){
 }) 
 
 }
+function deletar(){
+  axios({
+    method: 'delete',
+    url: `${'http://150.165.85.16:9900/api/msgs/2'}`,
+    data: null,
+    withCredentials: true,
+    headers: {'Content-Type': 'application/json'},
+    credentials: 'pwanderley:28101997'
+  
+})
+}

@@ -49,7 +49,7 @@
     color: brown;
     margin-left: 30px;
 }
-#aqui{
+#enviarButton{
     text-align: center;
 }
 #button{
@@ -63,6 +63,21 @@
     width: 90px;
     height: 50px;
     
+}
+#deletarButton{
+    text-align: center;
+}
+#delete{
+    color: brown;
+    border-color: brown;
+    border-width: medium;
+    border-style:solid;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 70px;
+    width: 90px;
+    height: 50px;
+
 }
 
 
