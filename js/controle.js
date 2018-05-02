@@ -20,8 +20,8 @@ function enviarMsg(mensagem){
 }) 
 
 }
-function deletar(){
-  axios.delete('http://150.165.85.16:9900/api/msgs/2', {
+function deletar(id){
+  axios.delete('http://150.165.85.16:9900/api/msgs/' + id, {
     headers: {
       'uid': 'pwanderley',
       'Content-Type': 'application/json',
