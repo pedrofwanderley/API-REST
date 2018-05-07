@@ -22,7 +22,6 @@ function enviarMsg(mensagem){
 }
 function deletar() {
   var id = document.getElementById("id_delete").value;
-  var id = document.getElementById("id_delete").value;
   fetch('http://150.165.85.16:9900/api/msgs'+ "/" + id,{
     method: "delete",
     body: JSON.stringify({credentials: 'pwanderley:28101997'})
