@@ -84,6 +84,15 @@
 #deletarButton{
     text-align: center;
 }
+#id_delete{
+    border-color: brown;
+    margin-left: 10px;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    border-width: thick;
+
+}
 #delete{
     color: brown;
     border-color: brown;
