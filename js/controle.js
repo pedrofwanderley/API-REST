@@ -12,20 +12,29 @@ function escrever(){
   enviarMsg(obj);
 }
 function enviarMsg(mensagem){
-  axios.post('http://150.165.85.16:9900/api/msgs',{
-  title: mensagem.title,
-  msg: mensagem.msg,
-  author:mensagem.author,
-  credentials:mensagem.id
-}) 
+  fetch('http://150.165.85.16:9900/api/msgs',{
+    method: "post" ,
+    body: JSON.stringify({title: mensagem.title,
+      msg: mensagem.msg,
+      author:mensagem.author,
+      credentials:mensagem.id})
+  })
 
 }
-function deletar(){
-  axios.delete('http://150.165.85.16:9900/api/msgs/2', {
-    headers: {
-      'uid': 'pwanderley',
-      'Content-Type': 'application/json',
-      credentials: 'pwanderley:28101997'
-    }
-  })
+function deletar() {
+  var id = document.getElementById("id_delete").value;
+  fetch('http://150.165.85.16:9900/api/msgs'+ "/" + id,{
+    method: "delete",
+    body: JSON.stringify({credentials: 'pwanderley:28101997'})
+    }).then(response => 
+    response.json().then(json => {
+      return json;
+    }))
 }
+
+// Código post usando axios
+/**axios.post('http://150.165.85.16:9900/api/msgs',{
+  title: mensagem.title,
+  msg: mensagem.msg,)
+  author:mensagem.author,
+  credentials:mensagem.id**/
